@@ -13,4 +13,28 @@
 <h2>What is module in angular?</h2>
 <app-login></app-login>
 <app-signup></app-signup>
-<button (click)="getName()">Get my name</button>
+<button (click)="getName(myName)">Get my name</button>
+<br>
+<br>
+<h2>Important events in angular</h2>
+<button (click)="myEvent('A simple click event')">Click me</button>
+<br><br>
+<blockquote>Keyup space event</blockquote>
+<input type="text" #box (keyup.space)="myEvent(box.value)">
+<br><br>
+<blockquote>Blur event</blockquote>
+<input type="text" #box1 (blur)="myEvent(box1.value)">
+<br><br>
+<blockquote>Mouseover event</blockquote>
+<h1 
+    (mouseover)="myEvent('Mouseover event')"
+    style="background-color: chocolate;"> 
+    Mouseover event
+</h1>
+<br><br>
+<blockquote>Mouseleave event</blockquote>
+<h1 
+    (mouseleave)="myEvent('Mouseleave event')"
+    style="background-color:rebeccapurple;"> 
+    Mouseleave event
+</h1>

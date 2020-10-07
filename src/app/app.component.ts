@@ -8,13 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'blog';
   name = 'edd';
-  getName()
+  myName = "Hazel"
+  getName(name)
   {
-    alert("Daisy Koome")
+    alert(name)
   }
   obj ={
     name: 'dee',
     age:22
+  }
+  myEvent(evt)
+  {
+    console.warn(evt)
   }
 
 
